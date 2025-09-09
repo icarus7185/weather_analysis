@@ -1,0 +1,12 @@
+numpy 
+pandas
+matplotlib
+seaborn
+scikit-learn
+xgboost
+
+nbformat
+
+openmeteo-requests
+requests-cache
+retry-requests
