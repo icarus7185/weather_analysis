@@ -1,4 +1,2 @@
 .cache.sqlite
-__pycache__/models.cpython-313.pyc
-__pycache__/open_meteo.cpython-313.pyc
-__pycache__/models.cpython-312.pyc
+__pycache__/*
