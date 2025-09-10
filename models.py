@@ -101,12 +101,10 @@ class My_XGB(My_Classifier):
     def __init__(self, x_train, x_test, y_train, y_test):
         super().__init__(x_train, x_test, y_train, y_test)
         self.clf = XGBClassifier(
-                        objective='binary:logistic',
-                        eval_metric='logloss',
-                        use_label_encoder=False, # Suppress warning about deprecated use_label_encoder
+                        objective='multi:softmax',
                         n_estimators=100,       # Number of boosting rounds (trees)
                         learning_rate=0.1,      # Step size shrinkage to prevent overfitting
-                        max_depth=3             # Maximum depth of a tree
+                        max_depth=9             # Maximum depth of a tree
                     )
 
     def forward(self):
